@@ -4,6 +4,46 @@
     font-family: "Barlow",Arial,"sans-serif";
     line-height: 1.3;
   }
+  .United-state{
+    background: #f7f2f2;
+    display: flex;
+    gap: 30rem;
+}
+.United-state .container{
+display: flex;
+}
+.United-state p:hover{
+    text-decoration: underline;
+}
+.United-state .topNav ol {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+}
+.United-state .topNav ol li:hover {
+    cursor: pointer;
+  text-decoration: underline;
+}
+.United-state .text-top {
+  font-weight: bold;
+}
+.United-state .text-top i{
+    margin-left:8px;
+}
+
+.popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 500px;
+  height: 500px;
+  background-color: white;
+  border: 1px solid black;
+  z-index: 9999;
+  padding: 20px;
+}
   .container {
     /* width: 80%; */
     max-width: 1280px;
