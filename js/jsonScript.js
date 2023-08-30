@@ -1,11 +1,8 @@
 let blogContainer = document.querySelector("#blogContainer");
 
-// let output = ''
-
 fetch("../json/blog.json")
   .then((response) => response.json())
   .then((data) => {
-    // console.log(data);
     data.map((items, index) => {
       blogContainer.innerHTML += `
       <div class="blogCard" id="blogCard">

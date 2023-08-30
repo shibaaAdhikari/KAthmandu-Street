@@ -4,13 +4,57 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/style.css">
   <link rel="stylesheet" href="./css/insightsStyle.css">
+  <link rel="stylesheet" href="./css/blogStyle.css">
+  <link rel="stylesheet" href="./css/media.css">
+  <link rel="stylesheet" href="./css/popUp.css">
   <link rel="stylesheet" href="./assets/icons/fontawesome-free-6.4.2-web/css/all.css">
   <title>Insights | State Street</title>
 </head>
 
 <body>
   <div class="divWrapper">
+    <div id="popup">
+      <div id="insightsPopUp">
+        <div id="upperContent">
+          <div class="crossMark">
+            <i class="fa-solid fa-xmark" id="cross"></i>
+          </div>
+          <div class="filterWrapper">
+            <a class="filterText">Filters (208 Results)</a>
+          </div>
+          <div class="filterTopics" id="filterTopics">
+            <div class="arrowWithTopic" id="arrowWrap">
+              <h2 class="topicText">Topic</h2>
+              <i class="fa-solid fa-angle-down" id="downArrow"></i>
+            </div>
+            <div id="filterCheck" class="filterCheck">
+              <div class="check">
+                <input type="checkbox" name="AI" id="AI" class="checkboxInput">
+                <label for="AI" class="checkText">AI</label>
+              </div>
+            </div>
+          </div>
+          <div class="filterTopics">
+            <div class="arrowWithTopic" id="arrowWrap1">
+              <h2 class="topicText">Insights Section</h2>
+              <i class="fa-solid fa-angle-down" id="downArrow1"></i>
+            </div>
+            <div id="filterCheck1" class="filterCheck">
+              <div class="check">
+                <input type="checkbox" name="AI" id="AI" class="checkboxInput">
+                <label for="AI" class="checkText">AI</label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="applyBtn">
+          <hr id="btnUpLine">
+          <input type="button" value="Apply" id="applyButton">
+        </div>
+      </div>
+    </div>
     <div class="insightsContainer">
       <h1 class="insightsText">
         Insights
@@ -20,30 +64,12 @@
         <a class="insightsFilters">Filters (208 Results)</a>
       </div>
       <div id="insightWrapper">
-        <div class="crossMark">
-          <i class="fa-solid fa-xmark" id="cross"></i>
-        </div>
-        <div class="filterContainer" id="filterContainer">
-          <a class="insightsFilters">Filters (208 Results)</a>
-        </div>
         <div class="topicContainer">
           <div class="topicWithArrow" id="topicArrow">
             <h2 class="topicText">Topic</h2>
             <i class="fa-solid fa-angle-down" id="arrow"></i>
           </div>
           <div id="topicFilters" class="topicFilters">
-            <div class="checkboxRows">
-              <input type="checkbox" name="AI" id="AI" class="topicCheckboxes">
-              <label for="AI" class="chekboxText">AI</label>
-            </div>
-            <div class="checkboxRows">
-              <input type="checkbox" name="AI" id="AI" class="topicCheckboxes">
-              <label for="AI" class="chekboxText">AI</label>
-            </div>
-            <div class="checkboxRows">
-              <input type="checkbox" name="AI" id="AI" class="topicCheckboxes">
-              <label for="AI" class="chekboxText">AI</label>
-            </div>
             <div class="checkboxRows">
               <input type="checkbox" name="AI" id="AI" class="topicCheckboxes">
               <label for="AI" class="chekboxText">AI</label>
@@ -60,18 +86,6 @@
               <input type="checkbox" name="AI" id="AI" class="topicCheckboxes">
               <label for="AI" class="chekboxText">AI</label>
             </div>
-            <div class="checkboxRows">
-              <input type="checkbox" name="AI" id="AI" class="topicCheckboxes">
-              <label for="AI" class="chekboxText">AI</label>
-            </div>
-            <div class="checkboxRows">
-              <input type="checkbox" name="AI" id="AI" class="topicCheckboxes">
-              <label for="AI" class="chekboxText">AI</label>
-            </div>
-            <div class="checkboxRows">
-              <input type="checkbox" name="AI" id="AI" class="topicCheckboxes">
-              <label for="AI" class="chekboxText">AI</label>
-            </div>
           </div>
         </div>
       </div>
@@ -80,11 +94,13 @@
       <h1 class="latestText">Latest</h1>
       <div class="blogContainer" id="blogContainer">
       </div>
+      <input type="button" value="Load More" id="loadButton">
     </div>
   </div>
 </body>
 
 <script src="./js/insightsScript.js"></script>
 <script src="./js/jsonScript.js"></script>
+<script src="./js/filterPopup.js"></script>
 
 </html>

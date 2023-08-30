@@ -32,17 +32,3 @@ function handleClick1() {
     filterInsights.style.height = "100%";
   }
 }
-
-let openFilter = document
-  .querySelector("#openFilter")
-  .addEventListener("click", () => {
-    if (document.querySelector("#insightWrapper").style.left == "-100rem") {
-      document.querySelector("#insightWrapper").style.left = "0";
-    } else {
-      document.querySelector("#insightWrapper").style.left = "-100rem";
-    }
-  });
-
-let cross = document.querySelector("#cross").addEventListener("click", () => {
-  document.querySelector("#insightWrapper").style.left = "-100rem";
-});

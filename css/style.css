@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html {
+    font-family: "poppins", sans-serif;
+    color: var(--normalTextColor);
+    scroll-behavior: smooth;
+  }
+  
+  /* Font Family */
+  @font-face {
+    font-family: "poppins";
+    src: url("../assets/fonts/Poppins/OFL.txt");
+  }
+  
+  /* Properties */
+  :root {
+    --primaryTextColor: #0a2f5d;
+    --textColor: #004990;
+    --normalTextColor: #323e48;
+    --borderColor: #d8e3ea;
+  }
+  
+  /* Main Container / Wrapper */
+  .divWrapper {
+    padding: 0 clamp(10px, 15vw, 25px);
+    margin: 0 auto;
+    max-width: 1280px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  

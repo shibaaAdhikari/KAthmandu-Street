@@ -1,0 +1,106 @@
+#popup {
+  position: fixed;
+  left: -200vw;
+  top: 0;
+  /* background: rgba(0, 0, 0, .1); */
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  transition: left 0.3s ease-in-out;
+  z-index: 10;
+}
+
+#insightsPopUp {
+  max-width: clamp(15rem, 60vw, 25rem);
+  display: flex;
+  width: 100%;
+  height: 100dvh;
+  flex-direction: column;
+  padding: 20px 10px;
+  background-color: white;
+  box-shadow: 1px 1px 150px black;
+  overflow: hidden;
+  position: relative;
+}
+
+#cross {
+  float: right;
+  font-size: xx-large;
+}
+
+#upperContent {
+  height: 80%;
+  overflow-y: scroll;
+}
+
+.filterWrapper {
+  width: 100%;
+  padding: 15px 0;
+  border: none;
+  border-bottom: 1px solid var(--borderColor);
+  border-top: 3px solid var(--primaryTextColor);
+  margin: 10px 0;
+  display: flex;
+  justify-content: start;
+}
+
+.filterTopics {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px 0;
+}
+
+#filterTopics {
+  border-bottom: 1px solid var(--borderColor);
+}
+
+.filterCheck {
+  display: none;
+}
+
+#arrowWrap,
+#arrowWrap1 {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  border: none;
+  margin: 10px 0;
+}
+
+#downArrow,
+#downArrow1 {
+  transform: rotate(0deg);
+  height: min-content;
+  transition: all 0.3s ease-in-out;
+}
+
+.applyBtn {
+  height: 25%;
+  padding-top: 10px 0;
+}
+
+#btnUpLine {
+  transform: scaleX(1.1);
+  height: 0.1px;
+  margin-bottom: 20px;
+}
+
+#applyButton {
+  width: 100%;
+  height: fit-content;
+  padding: 10px 0;
+  color: var(--textColor);
+  border: 1px solid var(--textColor);
+  background-color: transparent;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+#applyButton:hover {
+  background-color: var(--textColor);
+  color: white;
+  cursor: pointer;
+}

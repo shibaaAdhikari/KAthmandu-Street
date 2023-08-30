@@ -1,0 +1,68 @@
+/* InsightsContainer */
+.insightsContainer {
+  padding: 0;
+  width: 100%;
+}
+
+.insightsContainer > *:not(.insightsText):not(.filterContainer) {
+  display: none;
+  width: 100%;
+}
+
+.insightsContainer .filterContainer a {
+  text-decoration: none;
+  color: black;
+  font-weight: lighter;
+  font-size: 1rem;
+}
+
+.insightsContainer .topicContainer {
+  border-bottom: 1px solid var(--borderColor);
+}
+
+.insightsContainer .topicContainer,
+.insightsContainer .insightsSectionContainer {
+  width: 100%;
+  padding: 10px 0 15px 0;
+  margin: 10px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+}
+.topicWithArrow {
+  display: flex;
+  justify-content: space-between;
+}
+
+.insightsContainer .insightsText {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--primaryTextColor);
+  margin: 20px 0;
+  font-family: "poppins", sans-serif;
+}
+
+.insightsContainer .filterContainer {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid var(--primaryTextColor);
+  margin: 10px 0 0 0;
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+}
+.insightsContainer .filterContainer a {
+  text-decoration: none;
+  color: var(--primaryTextColor);
+  font-weight: bold;
+}
+
+.insightsContainer .insightsFilters {
+  width: fit-content;
+  font-size: 1rem;
+}
+
+.topicText {
+  font-size: 1rem;
+  font-weight: 500;
+}
