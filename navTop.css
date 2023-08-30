@@ -1,0 +1,20 @@
+.United-state{
+    background: #f7f2f2;
+    display: flex;
+    gap: 30rem;
+}
+.United-state p:hover{
+    text-decoration: underline;
+}
+.United-state .topNav ol {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+}
+.United-state .topNav ol li:hover {
+    cursor: pointer;
+  text-decoration: underline;
+}
+.United-state .text-top i{
+    margin-left:8px;
+}
